@@ -1,0 +1,65 @@
+main {
+    width: 100%;
+    height: auto;
+    color: #111;
+}
+/*************class**************/
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main {
+    color: white;
+background-image: url(../images/faq.webp);
+background-size: contain;
+background-repeat: no-repeat;
+height: 60vh;
+width: 100%;
+text-align: center;}
+.main h1 {
+    font-size: 50px;
+}
+.main p{
+font-size: 30px;
+}
+section div {
+    width: 20%;
+    height: 50%;
+    margin-top: 2%;
+}
+.row>div {
+    margin-left: 2%;
+}
+h1 {
+    font-size: 30px;
+}
+.row p {
+
+    font-size: 25px;
+}
+@media screen and (max-width:600px) {
+    .main {
+        background-size: cover;
+    height:50vh;  
+background-position: center;
+width: 100%;
+}
+main .row{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+section div {
+    width: 100%;
+}
+.row p{
+    font-size:large;
+    width: 90%;
+
+}
+.row h1 {
+    font-size: x-large;
+    width: 90%;
+}
+}
