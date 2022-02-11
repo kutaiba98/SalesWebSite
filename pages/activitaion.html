@@ -7,12 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/activitaion.css">
     <link rel="stylesheet" href="../styles/navigation.css">
-    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 
 <body>
-
     <header>
         <div class="search-bar">
             <div class="search-logo">
@@ -57,33 +56,33 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <script src="../javascript/main.js"></script>
     </header>
-
-    <main class="row">
-        <section class="sec-1">
-            <h1>Contact Us</h1>
-            <p>Ktovet</p>
-            <p>Email</p>
-            <p>number</p>
-        </section>
-        <section class="sec-2">
-            <h1>Get In Touch</h1>
-            <form action="../pages/thanx.html">
-                <label for="fname">Full Name </label>
-                <input type="text" id="fname" name="username" placeholder="Your name.." required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email.." required>
-                <label for="number">Phone Number</label>
-                <input type="tel" id="number" name="number" placeholder="number" required>
-                <label for="Address">Address</label>
-                <input type="text" id="Address" name="Address" placeholder="Address" required>
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
-                <button class=" button-black" type="submit" value="Send">send</button>
-
-            </form>
-
-
-        </section>
+    <main>
+        <div class="activation__wrapper">
+            <div class="activation__container">
+                <div class="activation__header"><img class="activation__logo"
+                        src="http://hortonworks.com/wp-content/uploads/2013/10/Fusionex-Logo-New.png" /></div>
+                <div class="activation__subject">Fusionex GIANT Activation Link</div>
+                <div class="activation__arrow"></div>
+                <div class="activation__message">
+                    <div> Dear, <span class="activation__user">Somebody</span>
+                        <!--<Username>-->
+                        <br />Thank you for choosing Fusionex GIANT.
+                    </div>
+                </div>
+                <div class="activation__link">
+                    <div>
+                        Click on the following link to activate your account:
+                    </div>
+                    <div class=" activation__btn">
+                      <a href="../pages/profile.html" > Activate your account here</a> </div>
+                </div>
+                <div class="activation__footer">
+                    Thank you. Sincerely,
+                    <br /> Fusionex GIANT Support Team
+                    <br />
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <h2>Subscribe Form</h2>

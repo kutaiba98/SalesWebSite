@@ -63,35 +63,35 @@
     <input type="checkbox" id="chk">
 
     <div class="signup">
-      <form action="">
+      <form >
         <label for="chk" class="sig">Sign up</label>
 
         <div class="user-box">
-          <input type="text" title="Enter Username" required>
+          <input type="text" id="userName2" title="Enter Username" required>
           <label>Username</label>
         </div>
         <div class="user-box">
-          <input type="text" title="Enter email" required>
+          <input type="email" id="email2" title="Enter email" required>
           <label>Email</label>
         </div>
         <div class="user-box">
-          <input type="password" title="Enter password" required>
+          <input type="password" id="password2" title="Enter password" required>
           <label>Password</label>
         </div>
 
-        <button>Sign up</button>
+        <button id="submitBtn2" class="button-white">Sign up</button>
       </form>
     </div>
 
     <div class="login">
-      <form>
+      <form >
         <label for="chk" class="logi">Login</label>
 
 
 
         <div class="user-box">
 
-          <input type="text" title="Enter Username" required>
+          <input type="text" title="Enter Username" id="userName" required>
 
           <label>Username</label>
 
@@ -99,12 +99,12 @@
 
         <div class="user-box">
 
-          <input type="password" title="Enter password" required>
+          <input type="password" id="password" title="Enter password" required>
 
           <label>Password</label>
 
         </div>
-        <button>Login</button>
+        <button id="submitBtn" class="button-black">Login</button>
       </form>
     </div>
   </div>
@@ -112,8 +112,8 @@
   <footer>
 
     <h2>Subscribe Form</h2>
-    <form action="">
-      <input type="email" placeholder="Email Address"><br>
+    <form action="../pages/thanx.html">
+      <input type="email" placeholder="Email Address" required><br>
       <input type="submit">
     </form>
     <div class="footer-nav">
@@ -127,6 +127,7 @@
     </p>
 
   </footer>
+  <script src="../javascript/sign.js"></script>
 </body>
 
 </html>

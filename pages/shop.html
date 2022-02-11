@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/shop.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
             </div>
             <div class="log row">
                 <li><a href="./sign.html"> <i class="fa fa-user-circle-o"></i>Log In</a></li>
-                <li><a href="./cart.html">
+                <li><a href="./cart.html" >
                         <i class="fa fa-shopping-bag"></i>Cart</a></li>
             </div>
         </div>
@@ -56,12 +57,26 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <script src="../javascript/main.js"></script>
     </header>
-
+<main>
+    <section>
+        <video preload="auto" autoplay muted loop id="myVideo">
+          <source src="../video/plan-001-black.mp4"> 
+            Your browser does not support HTML5 video.
+          </video>
+          
+          <div class="content">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+          </div>
+          <script src="../javascript/shop.js"></script>
+    </section>
+</main>
 
     <footer>
         <h2>Subscribe Form</h2>
-        <form action="">
-            <input type="email" placeholder="Email Address"><br>
+        <form action="../pages/thanx.html">
+            <input type="email" placeholder="Email Address" required><br>
             <input type="submit">
         </form>
         <div class="footer-nav">
