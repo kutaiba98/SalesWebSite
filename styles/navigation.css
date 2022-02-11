@@ -136,24 +136,23 @@ button {
 
 }
 .button-white:hover {
-  background-color: #162b6f;
+  background-color: rgba(17, 17, 17, 0);
   color: white;
 }
-.button-blue:hover {
-  background-color: white;
-  color: #162b6f;
+.button-black:hover {
+  background-color: rgba(17, 17, 17, 0.616);
+  color: white;
 }
-.button-blue {
+.button-black {
   transition: 0.5s;
-  background-color: #162b6f;
+  background-color: black;
   color: white;
   border: white solid 1px;
 }
 .button-white{
   transition: 0.5s;
   background-color: white;
-  color: #162b6f;
-  border: #162b6f solid 1px;
+  color: #111;
 }
 /*********************/
 nav {

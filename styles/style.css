@@ -2,6 +2,9 @@ body {
   margin: 0;
   
 }
+a{
+  text-decoration: none;
+}
 /*****************classes*******************/
 .row {
   display: flex;
@@ -12,6 +15,21 @@ body {
   display: flex;
 flex-direction: column;
 }
+.w3-tag,
+.fa {
+    cursor: pointer
+}
+
+.w3-tag {
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin-top: 6px
+}
+
+.badge {
+  display: block;
+}
 
 /******************main******************/
 
@@ -20,9 +38,10 @@ main {
   height: auto;
 }
 main .row {
+  text-align: center;
   height: 60vh;
   width:80%;
-  margin: 2% 10% ; 
+  margin: 4% 10% ; 
 } 
 .offer {
   width: 30%;
@@ -40,16 +59,45 @@ main img {
   width: 90%;
   margin: 0 5%;
 }
-.product .row {
-  width: 100%;
+.product .product-sec {
   height: 25vh;
-  margin: 5% 0;
+  
+}
+.over-flow {
+  /*overflow-x: scroll;*/
+  width: 100%;
+
+}
+.product .over-flow  {
+width: 90%;
+height: 20rem;
+}
+.over-flow img {
+  height: 10rem;
+  width: 10rem;
+}
+.product-sec a {
+  color: #111;
 }
 
 .img h3 {
   text-align: left;
 
 }
+.margin {
+  margin-left: 3%;
+}
+.links {
+  margin-left: 8%;
+}
+.links a {
+ padding: 10px;
+  width: auto;
+   border-radius: 50px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
 /*************animation*******************/
 .slideshow 
  {
@@ -198,7 +246,7 @@ textarea,#subject,#submit{
 }
 /*********************************/
 @media screen and (max-width:600px) {
-
+  
  body,main,section {
     width: 100%;
     height: auto;
@@ -213,6 +261,9 @@ textarea,#subject,#submit{
 }
 .links {
   margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .product>.row {
   display: flex;
@@ -270,3 +321,4 @@ iframe {
 margin-bottom: 5%;
 }
 }
+/**************************/

@@ -3,6 +3,7 @@ main {
     height: auto;
     margin: 0 auto;
     color: #111;
+    display: flex;
 }
 
 /********class*********/
@@ -26,4 +27,15 @@ font-size: 20px;}
 section h2 {
     font-size: 20px;
     color: #111;
+}
+@media screen and (max-width:600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+header~section {
+    width: 80%;
+    height: auto;margin: 01% 10%;
 }
