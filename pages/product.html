@@ -8,11 +8,10 @@
     <title>Kutaiba Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/navigation.css">
-    <link rel="stylesheet" href="../styles/faq.css">
+    <link rel="stylesheet" href="../styles/product.css">
 </head>
 
 <body>
-
     <header>
         <div class="search-bar">
             <div class="search-logo">
@@ -25,7 +24,7 @@
             </div>
             <div class="log row">
                 <li><a href="./sign.html"> <i class="fa fa-user-circle-o"></i>Log In</a></li>
-                <li><a href="./cart.html">
+                <li><a href="./cart.html" >
                         <i class="fa fa-shopping-bag"></i>Cart</a></li>
             </div>
         </div>
@@ -57,41 +56,58 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <script src="../javascript/main.js"></script>
     </header>
+<main>
+    <div class="container">
+        
+        <div class="card-container">
+            <input type="radio" name="colors-btn" id="color-1" checked>
+            <input type="radio" name="colors-btn" id="color-2">
+            <input type="radio" name="colors-btn" id="color-3">
+            <input type="radio" name="colors-btn" id="color-4">
+            <div class="shoe-area">
+                
+                    <div class="logo-div">
+                        <img src="https://github.com/gerrardNwoke/Prdouct-Card/blob/main/Shoe-product-card/imgs/nike-logo.png?raw=true" alt="">
+                    </div>
+                    <div class="floating-div">
+                    <div class="shoe-1"><img src="https://github.com/gerrardNwoke/Prdouct-Card/blob/main/Shoe-product-card/imgs/red-nike.png?raw=true" alt="red-nike" ></div>
+                    <div class="shoe-2"><img src="https://github.com/gerrardNwoke/Prdouct-Card/blob/main/Shoe-product-card/imgs/orange-nike.png?raw=true" alt="orange-nike"></div>
+                    <div class="shoe-3"><img src="https://github.com/gerrardNwoke/Prdouct-Card/blob/main/Shoe-product-card/imgs/white.png?raw=true" alt="white-nike"></div>
+                    <div class="shoe-4"><img src="https://github.com/gerrardNwoke/Prdouct-Card/blob/main/Shoe-product-card/imgs/black-nike.png?raw=true" alt="black-nike"></div>
+                    </div>
 
-    <main>
-        <section class="main">
-            <h1>FAQs</h1>
-            <p>You Asked, We Answered</p>
-        </section>
-        <section class="row">
-            <div>
-                <h1>Do you sell gift cards?</h1>
-                <p>
+            </div>
+            <div class="text-area">
+                <div class="heading-area">
+                    <h2>Jordan Proto-Lyte</h2>
+                    <h4>Running Collection</h4>
+                </div>
 
-                    Enter your answer here. Be thoughtful, write clearly and concisely, and consider adding written as
-                    well as visual examples. Go over what you’ve written to make sure that if it was the first time you
-                    were visiting the site, you’d understand your answer.
-                </p>
-            </div>
-            <div>
-                <h1>What are the payment options?</h1>
-                <p>
+                    <p class="paragraph-area">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, rerum asperiores error omnis pariatur sequi placeat quia fuga ullam. Harum obcaecati suscipit illum similique excepturi voluptates quae deserunt tempore, distinctio architecto ipsum dolor laboriosam inventore impedit nostrum totam eaque sed est? Non rem repudiandae, vitae iure suscipit pariatur, cum esse sequi cumque saepe commodi reprehenderit quaerat. Quasi ipsam repellendus similique
+                    </p>
 
-                    Enter your answer here. Be thoughtful, write clearly and concisely, and consider adding written as
-                    well as visual examples. Go over what you’ve written to make sure that if it was the first time you
-                    were visiting the site, you’d understand your answer.
-                </p>
+                <div class="color-selection">
+                    <div class="h5-text"><h5>Available Colors: </h5></div>
+                    
+                    <div class="color-pick-div">
+                        <label for="color-1" class="colors color-1"></label>
+                        <label for="color-2" class="colors color-2"></label>
+                        <label for="color-3"class="colors color-3" ></label>
+                        <label for="color-4" class="colors color-4"></label>
+                    </div>
+                </div>
+                <div class="price-and-buy-btn">
+                    <h2 class="price-1">$ 854.75</h2>
+                    <h2 class="price-2">$ 824.15</h2>
+                    <h2 class="price-3">$ 914.38</h2>
+                    <h2 class="price-4">$ 884.12</h2>
+                    <button class="buy-btn">BUY NOW</button>
+                </div>
             </div>
-            <div>
-                <h1>What is your return policy?</h1>
-                <p>
-                    Enter your answer here. Be thoughtful, write clearly and concisely, and consider adding written as
-                    well as visual examples. Go over what you’ve written to make sure that if it was the first time you
-                    were visiting the site, you’d understand your answer.
-                </p>
-            </div>
-        </section>
-    </main>
+        </div>
+    </div>
+</main>
     <footer>
         <h2>Subscribe Form</h2>
         <form action="../pages/thanx.html">
@@ -110,5 +126,4 @@
         </p>
     </footer>
 </body>
-
 </html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kutaiba Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/images.css">
     <link rel="stylesheet" href="../styles/navigation.css">
-    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 
 <body>
@@ -57,34 +58,48 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <script src="../javascript/main.js"></script>
     </header>
+<main>
+    <section>
+        <div class="imageshow-container">
 
-    <main class="row">
-        <section class="sec-1">
-            <h1>Contact Us</h1>
-            <p>Ktovet</p>
-            <p>Email</p>
-            <p>number</p>
-        </section>
-        <section class="sec-2">
-            <h1>Get In Touch</h1>
-            <form action="../pages/thanx.html">
-                <label for="fname">Full Name </label>
-                <input type="text" id="fname" name="username" placeholder="Your name.." required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email.." required>
-                <label for="number">Phone Number</label>
-                <input type="tel" id="number" name="number" placeholder="number" required>
-                <label for="Address">Address</label>
-                <input type="text" id="Address" name="Address" placeholder="Address" required>
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." required></textarea>
-                <button class=" button-black" type="submit" value="Send">send</button>
-
-            </form>
-
-
-        </section>
-    </main>
+            <div class="images fade">
+              <div class="numbers">1 of 4</div>
+              <img src="../images/img1.jpg" style="width: 100%;">
+              <div class="caption">Swiss alps - The Matterhorn</div>
+            </div>
+          
+            <div class="images fade">
+              <div class="numbers">2 of 4</div>
+              <img src="../images/img2.jpg" style="width: 100%;">
+              <div class="caption">Paris - France</div>
+            </div>
+          
+            <div class="images fade">
+              <div class="numbers">3 of 4</div>
+              <img src="../images/img3.jpg" >
+              <div class="caption">New York - United States of America</div>
+            </div>
+          
+            <div class="images fade">
+              <div class="numbers">4 of 4</div>
+              <img src="../images/img4.jpg" >
+              <div class="caption">London - United Kingdom</div>
+            </div>
+          
+            <a class="prev" onclick="nextImage(-1)">&#10096;</a>
+            <a class="next" onclick="nextImage(1)">&#10097;</a>
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="spot" onclick="currentImage(1)"></span>
+            <span class="spot" onclick="currentImage(2)"></span>
+            <span class="spot" onclick="currentImage(3)"></span>
+            <span class="spot" onclick="currentImage(4)"></span>
+          </div>
+          
+    </section>
+</main>
     <footer>
         <h2>Subscribe Form</h2>
         <form action="../pages/thanx.html">
@@ -102,6 +117,7 @@
             2022 Kutaiba. All Rights Reserved.
         </p>
     </footer>
+<script src="../javascript/images.js"></script>
 </body>
 
 </html>
