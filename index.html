@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kutaiba Store</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/navigation.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-
+    <audio loop autoplay>
+        <source src="./audio/madirfan-3-30sec-composition-challenge-14304.mp3" type="audio/mpeg">
+    </audio>
     <header>
         <div class="search-bar">
             <div class="search-logo">
@@ -69,14 +71,18 @@
     </header>
 
     <main>
-
-
-
-        <div class="row">
+        <div class="row" id="slide">
             <div class="offer">
-                <h1 class="mg-left">You May Have A Special Offer</h1>
-                <p class="mg-left">Sign In To Your Account To Find Out.</p>
-                <button class="mg-left button-black">Go To My Account</button>
+                <h1 class="mg-left">You May Have </h1>
+                <h1 class="mg-left">A</h1>
+                <h1 class="mg-left"> Special Offer</h1>
+                <p class="mg-left ">Sign In To Your Account To Find Out.</p>
+                <form action="./pages/sign.html">
+                    <button class="mg-left button-black">Sign In</button>
+                </form>
+                <form action="./pages/images.html">
+                    <button class="mg-left button-black">Learn More</button>
+                </form>
             </div>
             <div class="slideshow">
 
@@ -104,47 +110,47 @@
         </div>
         <div class="product">
             <div class="links">
-                <a class="button-black" href="">Explore Popular Brands</a>
-                <a class="mg-left button-black" href="">See All</a>
+                <a class="button-black" href="./pages/shop.html">Explore Popular Brands</a>
+                <a class="mg-left button-black" href="./pages/shop.html">See All</a>
             </div>
             <div class="row product-sec">
-                <a href="">
+                <a href="./pages/product.html">
                     <div class="img">
                         <img src="../images/apple.jpeg" alt="">
                         <h3>Apple</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div class="img">
                         <img src="../images/samsung.jpeg" alt="">
                         <h3>Samsung</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div class="img">
                         <img src="../images/sony.jpeg" alt="">
                         <h3>Sony</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div class="img">
                         <img src="../images/ugreen.jpeg" alt="">
                         <h3>Ugreen</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div class="img">
                         <img src="../images/xiamy.jpeg" alt="">
                         <h3>Xiaomi</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div class="img">
                         <img src="../images/nike.jpeg" alt="">
                         <h3>Nike</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div class="img">
                         <img src="../images/born.jpeg" alt="">
                         <h3>Born Pretty</h3>
@@ -152,48 +158,48 @@
                 </a>
             </div>
             <div class="links">
-                <a class="button-black" href="">Explore Popular Categories</a>
-                <a class="mg-left button-black" href="">See All</a>
+                <a class="button-black" href="./pages/shop.html">Explore Popular Categories</a>
+                <a class="mg-left button-black" href="./pages/shop.html">See All</a>
             </div>
 
             <div class="row product-sec">
-                <a href="">
+                <a href="./pages/product.html">
                     <div>
                         <img src="../images/sneakers.jpeg" alt="">
                         <h3>Sneakers</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div>
                         <img src="../images/korean.jpeg" alt="">
                         <h3>Korean Beauty</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div>
                         <img src="../images/watch.jpeg" alt="">
                         <h3>WristWatches</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div>
                         <img src="../images/fishing.jpeg" alt="">
                         <h3>Fishing</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div>
                         <img src="../images/collect.jpeg" alt="">
                         <h3>Collectibles</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div>
                         <img src="../images/smart.jpeg" alt="">
                         <h3>Smartphones</h3>
                     </div>
                 </a>
-                <a href="">
+                <a href="./pages/product.html">
                     <div>
                         <img src="../images/sell.jpeg" alt="">
                         <h3>Sell</h3>
@@ -201,123 +207,146 @@
                 </a>
             </div>
             <div class="links">
-                <a class="button-black" href="">Daily Deals</a>
-                <a class="mg-left button-black" href="">See All</a>
+                <a class="button-black" href="./pages/shop.html">Daily Deals</a>
+                <a class="mg-left button-black" href="./pages/shop.html">See All</a>
             </div>
             <div class="column">
                 <div class="row over-flow">
-                    <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
-                    </div>
 
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n1.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..1</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/nike.jpeg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..2</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n2.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..3</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n3.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..4</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/nike.jpeg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..5</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n1.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..6</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n2.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..7</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n3.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..8</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n1.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..9</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n2.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..10</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/nike.jpeg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..11</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n3.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..12</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n1.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..13</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/n2.jpg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..14</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                     <div class="mySlides">
-                        <a href="">
-                            <img src="./images/watch.jpeg" alt="">
-                        </a>
-                        <h3>Apple</h3>
-                        <button class="button-black">Add To Cart</button>
+                        <img src="./images/nike.jpeg">
+                        <h1>Tailored Jeans</h1>
+                        <p class="price">$19.99</p>
+                        <p>Some text about the jeans..15</p>
+                        <form action="./pages/product.html">
+                            <button class="button-black">Add to Cart</button>
+                        </form>
                     </div>
                 </div>
                 <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
@@ -366,7 +395,9 @@
             <p>Our New </p>
             <p>Arrivals Are</p>
             <p>Here</p>
-            <button class="button-white">Learn More</button>
+            <form action="./pages/about.html">
+                <button class="button-white">Learn More</button>
+            </form>
         </article>
         <img src="../images/alesia-kazantceva-VWcPlbHglYc-unsplash.jpg" alt="">
 
@@ -380,7 +411,9 @@
                 Our passion for excellence has driven us from the beginning, and continues to drive us into the future.
                 We know that every product counts, and strive to make the entire shopping experience as rewarding as
                 possible. Check it out for yourself!</p>
-            <button class="button-white mg-left">Get in Touch</button>
+            <form action="./pages/contact.html">
+                <button class="button-white mg-left">Get in Touch</button>
+            </form>
         </article>
         <img src="../images/about.webp" alt="">
     </section>
