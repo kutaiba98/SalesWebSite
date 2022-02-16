@@ -1,4 +1,6 @@
-
+body {
+  background-color: #c4c4c4e3;
+}
 .flex-row {
     display: flex;
     -ms-flex-wrap: wrap; 
@@ -17,7 +19,7 @@ width: 22rem;
   }
   
   .container {
-    background-color: rgba(17, 17, 17, 0.466);
+    background-color: rgba(184, 184, 184, 0.466);
     padding: 5px 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 3px;
@@ -43,7 +45,7 @@ width: 22rem;
   }
   
   .btn {
-    background-color: #04AA6D;
+    background-color: rgba(17, 17, 17, 0.562);
     color: white;
     padding: 12px;
     margin: 10px 0;
@@ -55,7 +57,7 @@ width: 22rem;
   }
   
   .btn:hover {
-    background-color: #45a049;
+    background-color: #111;
   }
   
   span.price {

@@ -1,3 +1,10 @@
+.grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
 main {
     width: 90%;
     height: auto;
@@ -6,7 +13,7 @@ main {
 }
 img {
     width: 50%;
-    min-height: 100%;
+    height: 100%;
 }
 section {
     height: auto;
@@ -24,13 +31,7 @@ section p {
     font-size: 20px;
 }
 @media screen and (max-width:600px) {
-    main.row{
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
-        height: auto;
-
-    }
+  
    section  {
         width: 98%;
         margin: 1%;
@@ -42,6 +43,10 @@ section p {
     }
     section p {
         width: 100%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1,1fr);
+
     }
 
 }

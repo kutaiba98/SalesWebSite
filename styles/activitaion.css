@@ -101,3 +101,16 @@ main{
     color: white;
     transition: 0.5s;
   }
+  @media screen and (max-width:600px) {
+    main{
+      position: relative;
+  height: 80vh;
+  top: -100px;
+    }
+    .activation__message{
+      height: auto;
+    }
+  .activation__wrapper {
+    height: auto;
+  }
+  }

@@ -1,12 +1,17 @@
+:root{
+  --full-width:100%;
+  --black-color:#111;
+  --white-color:white;
+}
 *{
     box-sizing: border-box;
   }
   body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: var(--full-width);
     height: auto;
-    background-color: white;
+    background-color: var(--white-color);
     font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
   }
@@ -20,7 +25,7 @@
   width: 15%;
 }
 .logo {
-  width: 100%;
+  width: var(--full-width);
   height: 4rem;
 }
 .search {
@@ -31,11 +36,11 @@
   width:10% ;
 }
 #search {
-  width: 100%;
+  width:  var(--full-width);
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  background-color: white;
+  background-color: var(--white-color);
   background-image: url('../images/searchicon.png');
   background-position: 10px 10px; 
   background-repeat: no-repeat;
@@ -45,12 +50,13 @@
 
   /**************navBar**********************/
   header {
-    width: 100%;
-    height: auto;
+    width: var(--full-width);
+    height: auto ;
     position: sticky;
     top: 0;
-    background-color: #111;
+    background-color: var(--black-color);
  z-index: 1;
+
   }
   
   ul {
@@ -63,24 +69,24 @@
   }
   
   li>a {
-    color: white;
+    color: var(--white-color);
     text-decoration: none;
   transition: 0.5s;
   } 
   
   li>a:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--white-color);
     font-size: large;
   }
   
 /*********footer***********/
 footer{
     text-align: center;
-    color: white;
-    background-color: #111;
+    color: var(--white-color);
+    background-color: var(--black-color);
     min-height: 25vh;
     padding: 20px ;
-    width: 100%;
+    width: var(--full-width);
   }
   .footer-nav {
     font-size: 30px;
@@ -88,36 +94,43 @@ footer{
   }
 
   footer i {
-    color: white;
+    color: var(--white-color);
     transition: 0.5s;
   }
   footer i:hover {
-    color: #a0b1e7;
+    color: var(--black-color);
+    background: var(--white-color);
   }
   footer input {
     width: 30%;
   }
   footer input[type=email]{
-    background: #162b6f; 
-    border-bottom: 1px solid white;
+    background: var(--black-color); 
+    border: 1px solid var(--white-color);
     margin-bottom: 10px;
     height: 3rem;
+    color: var(--white-color);
+    border-radius: 5px;
 
   }
   footer input[type=submit]{
-    background-color: white ;
-    color: #162b6f;
+    background-color: var(--white-color) ;
+    color: var(--black-color);
     font-size:20px;
     transition: 0.5s;
     height: 3rem;
+    border-radius: 5px;
+
   
   }
   footer input[type=submit]:hover{
-    background-color: #a0b1e7;
-    color: white;
+    background-color: var(--black-color);
+    filter: brightness(5);
+    color: var(--white-color);
+    cursor: pointer;
   }
   footer ::placeholder{
-    color: white;
+    color: var(--white-color);
   }  
   /********classes********/
 
@@ -133,26 +146,27 @@ button {
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
 
 }
 .button-white:hover {
   background-color: rgba(17, 17, 17, 0);
-  color: white;
+  color: var(--white-color);
 }
 .button-black:hover {
   background-color: rgba(17, 17, 17, 0.616);
-  color: white;
+  color: var(--white-color);
 }
 .button-black {
   transition: 0.5s;
-  background-color: black;
-  color: white;
-  border: white solid 1px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: var(--white-color) solid 1px;
 }
 .button-white{
   transition: 0.5s;
-  background-color: white;
-  color: #111;
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 /*********************/
 nav {
@@ -177,11 +191,11 @@ header >h1 >a{
 }
 
 span{
-  display: none;
+  display: none ;
 }
 .overlay {
 height: 100%;
-width: 100%;
+width: var(--full-width);
 display: none;
 position: fixed;
 z-index: 1;
@@ -194,7 +208,7 @@ background-color: rgba(0,0,0, 0.9);
 .overlay-content {
 position: relative;
 top: 25%;
-width: 100%;
+width: var(--full-width);
 text-align: center;
 margin-top: 30px;
 }
@@ -203,7 +217,7 @@ margin-top: 30px;
 padding: 8px;
 text-decoration: none;
 font-size: 36px;
-color: white;
+color: var(--white-color);
 display: block;
 transition: 0.3s;
 }
@@ -222,32 +236,32 @@ font-size: 60px;
 /************media screen***************/
 @media screen and (max-width: 600px) {
   .search {
-    display: none;
+    display: none  ;
   }
   .search-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
   }
   .log i{
-width: 3rem; 
-text-align: center;
+width: 3rem  ; 
+text-align: center  ;
 }
 hr {
   display: none;
 }  
 body{
-      width: 100%;
+      width: var(--full-width);
   }
     header {
-         width: 100%;
-         height: auto;
-         justify-content:space-around ;
-         display: flex;
+         width: var(--full-width);
+         height: auto  ;
+         justify-content:space-around  ;
+         display: flex ;
          margin: 0;
          padding: 0;    
     }
     footer {
-      width: 100%;
+      width: var(--full-width);
 
     }
     footer input {
@@ -273,10 +287,10 @@ body{
         text-align: center;
     }
     span{
-        display:block;
-        color: white;
-margin: 5% 5% 0 ;
-margin-right: 5%;
+        display:block  ;
+        color: var(--white-color);
+margin: 5% 5% 0   ;
+margin-right: 5%  ;
     }
 
     .overlay a {font-size: 20px}
