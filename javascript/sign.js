@@ -33,7 +33,7 @@ submitBtn.addEventListener("click", (e) =>{
             localStorage.setItem("password",userPass)
             location.reload()
             if(localStorage.name && localStorage.password && localStorage.email){
-           window.location.href="../pages/profile.html";
+           window.location.href="../pages/activitaion.html";
             }else{
                 window.alert("one feild or more is empty ,plaese try again ")
             }
